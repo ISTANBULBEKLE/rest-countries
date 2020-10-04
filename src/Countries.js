@@ -1,7 +1,7 @@
 // 20201004192948
 // https://restcountries.eu/rest/v2/all
  // eslint-disable-next-line no-unused-vars
- 
+
  const Countries = [
   {
     "name": "Afghanistan",
@@ -20382,3 +20382,5 @@
     "cioc": "ZIM"
   }
 ]
+
+export default Countries;
