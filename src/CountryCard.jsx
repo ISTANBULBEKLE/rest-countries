@@ -12,5 +12,4 @@ const CountryCard = () => {
     </div>
   );
 };
-
 export default CountryCard;

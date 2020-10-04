@@ -5,7 +5,6 @@ const CountryInfo = () => {
     <div class="col-md-8">
       <div class="card-body">
         <h2 class="card-title">Belgium</h2>
-
         <p class="card-text">
           <small class="text-muted">Native Name:</small>
         </p>
