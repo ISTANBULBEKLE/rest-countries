@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       <h1>Rest Countries</h1>
       {Countries.map((c) => (
-        <div className="card mb-3 " >
+        <div className="card mb-3 ">
           <div className="row no-gutters container">
             <div className="col-md-4">
               <img src={c.flag} className="card-img" alt="country-flag" />
@@ -39,11 +39,11 @@ function App() {
                 </p>
                 <p>
                   <small className="text-muted">
-                    Currencies: {c.currencies.name}
+                    Currencies: {c.currencies.map((i) => i.name)}
                   </small>
                 </p>
                 <p>
-                  <small className="text-muted">Languages: </small>
+                  <small className="text-muted">Languages:{c.languages.map((a) => (a.name))} </small>
                 </p>
                 <p>
                   <small className="text-muted">Border Countries:</small>
