@@ -17,16 +17,31 @@ img{
   height: 150px;
   margin-right: 5px;
 }
+.root{
+  display:flex;
+}
 .card{
   border:1px solid black;
   display:flex;
   max-width: 540px;
   margin:3px;
+  background-color: rgb(171, 184, 184);
 }
-
-.container{
+.card-container{
+  display: flex;
+}
+.row-container{
 display:flex;
 }
 .card-body{
 
+}
+.ul-element{
+ 
+}
+.li-element{
+  list-style:none;
+}
+p{
+  font-weight:bold;
 }
