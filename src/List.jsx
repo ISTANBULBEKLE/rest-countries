@@ -5,8 +5,9 @@ const List =({item, title})=>{
     if(title === "Border Countries:"){
  return (
         <div>{title}
-        <ul className='ul-element'>
-{item.map(it => <li className='li-element'>{it}</li>)}
+            <ul className='ul-element'>
+                {item.map(it => 
+                    <li className='li-element'>{it}</li>)}
             </ul>
         </div>
     );
@@ -14,8 +15,9 @@ const List =({item, title})=>{
     }else{
     return (
         <div>{title}
-        <ul className='ul-element'>
-{item.map(it => <li className='li-element'>{it.name}</li>)}
+            <ul className='ul-element'>
+                {item.map(it => 
+                <li className='li-element'>{it.name}</li>)}
             </ul>
         </div>
     );}

@@ -12,36 +12,51 @@ code {
     monospace;
 }
 
-img{
+
+.card-img{
   width:200px;
   height: 150px;
   margin-right: 5px;
 }
-.root{
-  display:flex;
-}
-.card{
-  border:1px solid black;
-  display:flex;
-  max-width: 540px;
-  margin:3px;
-  background-color: rgb(171, 184, 184);
-}
-.card-container{
-  display: flex;
-}
-.row-container{
-display:flex;
-}
-.card-body{
 
+/*  Container  Main Roper */
+
+.card-roper{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  border: 2px solid green;
+  margin:5px;
 }
-.ul-element{
- 
+.container{
+  display:flex;
+  border:2px solid black;
+  margin:5px;
 }
+.info-container{
+/*   display:flex;
+  flex-direction: column;
+  justify-content: center; */
+  border:2px solid rgb(241, 245, 37);
+}
+.country-info{
+  display:inline-block;
+  flex-direction: column;
+  align-items: flex-start;
+  border:2px solid rgb(231, 21, 32);
+}
+
+.country-name{
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+.basic-country-info{
+  display:flex;
+  flex-direction: column;
+  border:2px solid rgb(131, 216, 241);
+}
+
 .li-element{
-  list-style:none;
-}
-p{
-  font-weight:bold;
+  list-style-type: none;
 }

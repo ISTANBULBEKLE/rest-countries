@@ -11,12 +11,13 @@ const [inputValue, setInputValue] = useState("");
   return (
     <div className='search-box'>
         <input
-            
+            size='45'
+            className='input-element'
             value={inputValue}
             onChange={handleSearch}
             type="text"
-            placeholder="search for country name and capitol"
-      />
+            placeholder="SEARCH FOR COUNTRY NAME AND CAPITOL"
+     />
     </div>
   );
 };
