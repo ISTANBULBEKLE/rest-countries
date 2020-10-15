@@ -26,25 +26,29 @@ code {
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
-  border: 2px solid green;
+  border: 2px solid rgb(44, 49, 44);
+  background-color: #38a391;
+  border-radius: 5px;;
   margin:5px;
 }
 .container{
   display:flex;
   border:2px solid black;
+  border-radius: 5px;
   margin:5px;
+  background-color: rgb(211, 209, 182);
 }
 .info-container{
 /*   display:flex;
   flex-direction: column;
   justify-content: center; */
-  border:2px solid rgb(241, 245, 37);
+ /*   border:2px solid rgb(241, 245, 37); */
 }
 .country-info{
   display:inline-block;
   flex-direction: column;
   align-items: flex-start;
-  border:2px solid rgb(231, 21, 32);
+ /*  border:2px solid rgb(231, 21, 32); */
 }
 
 .country-name{
@@ -54,7 +58,9 @@ code {
 .basic-country-info{
   display:flex;
   flex-direction: column;
-  border:2px solid rgb(131, 216, 241);
+  margin:0;
+  padding:0px;
+/*   border:2px solid rgb(131, 216, 241); */
 }
 
 .li-element{
