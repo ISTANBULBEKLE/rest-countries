@@ -1,7 +1,7 @@
 import React from 'react';
 const List =({item, title})=>{
 
-//if(item.length !== 0){
+
     if(title === "Border Countries:"){
  return (
         <div>{title}
@@ -21,6 +21,6 @@ const List =({item, title})=>{
             </ul>
         </div>
     );}
-//};
+
 };
 export default List;

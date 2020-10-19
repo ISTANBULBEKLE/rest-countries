@@ -2,8 +2,6 @@ import React, {useState} from "react";
 
 const  RegionSelection = ({countryList, handleRegionFilter}) => {
 
-console.log(countryList);
-
 const [inputRegionValue, setInputRegionValue] = useState("");
 
   function handleRegionSearch(e) {

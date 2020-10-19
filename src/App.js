@@ -31,7 +31,7 @@ const[countryList, setCountryList]= useState(Countries);
        <hr></hr>
       <div className='card-roper'>
         {countryList.map((c) => (
-          <Country c={c} />
+          <Country c={c} key={c.alpha2Code}/>
       ))}
       </div>
       <hr></hr>
