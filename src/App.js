@@ -54,7 +54,7 @@ setCountryList(Countries.filter( r =>r.region.toLowerCase().includes(reg)).filte
       <hr></hr>
       <RegionSelection countryList ={countryList} handleRegionFilter={handleRegionFilter}/>
        <hr></hr>
-       <button className='main-button' onClick={handleGoBack}>Back To Main List</button>
+       <button className='main-button' onClick={handleGoBack}>Back to Main List</button>
         <hr></hr>
       <div className='card-roper'>
         {countryList.map((c) => (
