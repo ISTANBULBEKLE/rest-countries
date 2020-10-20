@@ -12,10 +12,7 @@ const[addInfo, setAddInfo]= useState(false);
 const [reg, setReg] = useState("");
 const[searchItem, setSearchItem]= useState('');
 
-/* setCountryList(Countries.filter(c =>
-        (c.name.toLowerCase().includes(search) || c.capital.toLowerCase().includes(search)) && (c.region.toLowerCase().includes(reg)))); */
-
-  function handleFilter(input) {
+  function handleFilter(input){
     setCountryList(
       Countries.filter((c) =>
         c.name.toLowerCase().includes(input) || c.capital.toLowerCase().includes(input)
@@ -24,27 +21,25 @@ const[searchItem, setSearchItem]= useState('');
     setSearchItem(input);
   }
 
-  function handleRegionFilter (input){
+  function handleRegionFilter(input){
     setCountryList(Countries.filter( r =>r.region.toLowerCase().includes(input)).filter((c) =>
         c.name.toLowerCase().includes(searchItem) || c.capital.toLowerCase().includes(searchItem)
       ));
     setReg(input);
   }
 
-/* const[basicCard, setBasicCard]= useState() */
+  function countryDetails(c){
+    setCountryList([c]);
+    setAddInfo(true);
+  }
 
-function countryDetails(c){
-setCountryList([c]);
-setAddInfo(true);
-}
-
-function handleGoBack(e){
-setAddInfo(false);
-setCountryList(Countries.filter( r =>r.region.toLowerCase().includes(reg)).filter((c) =>
+  function handleGoBack(e){
+    setAddInfo(false);
+    setCountryList(Countries.filter( r =>r.region.toLowerCase().includes(reg)).filter((c) =>
         c.name.toLowerCase().includes(searchItem) || c.capital.toLowerCase().includes(searchItem)
       ));
 
-}
+  }
 
   return (
     <div className="App">
@@ -53,9 +48,9 @@ setCountryList(Countries.filter( r =>r.region.toLowerCase().includes(reg)).filte
       <SearchBox handleFilter={handleFilter}/>
       <hr></hr>
       <RegionSelection countryList ={countryList} handleRegionFilter={handleRegionFilter}/>
-       <hr></hr>
-       <button className='main-button' onClick={handleGoBack}>Back to Main List</button>
-        <hr></hr>
+      <hr></hr>
+      <button className='main-button' onClick={handleGoBack}>Back to Main List</button>
+      <hr></hr>
       <div className='card-roper'>
         {countryList.map((c) => (
           <Country c={c} key={c.alpha2Code} countryDetails={countryDetails} addInfo={addInfo} />

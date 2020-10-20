@@ -1,20 +1,16 @@
-import React, {useState} from "react";
+import React, from "react";
 import List from "./List";
 import BasicCountryInfo from './BasicCountryInfo'
 import CountryFlag from './CountryFlag'
 
 const Country = ({ c, countryDetails, addInfo }) => {
 
-const[basicCard, setBasicCard]= useState(false)
-
-function handleMainCard(){
- countryDetails(c);
-}
+  function handleMainCard(){
+    countryDetails(c);
+  }
 
   return (
- 
   <div onClick={handleMainCard} className='container'>
-    
     <CountryFlag c={c}/>
     <div className='info-container'>
       <div className='country-info'>
@@ -28,8 +24,6 @@ function handleMainCard(){
       </div>
     </div>
   </div>
- 
- 
   );
 };
 
