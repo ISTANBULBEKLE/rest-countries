@@ -3,7 +3,7 @@ const List =({item, title})=>{
 
 
     if(title === "Border Countries:"){
- return (
+        return (
         <div>{title}
             <ul className='ul-element'>
                 {item.map(it => 
@@ -12,8 +12,8 @@ const List =({item, title})=>{
         </div>
     );
 
-    }else{
-    return (
+        }else{
+        return (
         <div>{title}
             <ul className='ul-element'>
                 {item.map(it => 
