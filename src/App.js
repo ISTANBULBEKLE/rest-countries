@@ -49,7 +49,10 @@ const[searchItem, setSearchItem]= useState('');
       <hr></hr>
       <RegionSelection countryList ={countryList} handleRegionFilter={handleRegionFilter}/>
       <hr></hr>
-      <button className='main-button' onClick={handleGoBack}>Back to Main List</button>
+      <div className='buttons'>
+        <button className='main-button' onClick={handleGoBack}>Back to Main List</button>
+        <button className='change-color' type="button" >Change Color</button>
+      </div>
       <hr></hr>
       <div className='card-roper'>
         {countryList.map((c) => (
